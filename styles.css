@@ -47,6 +47,10 @@ html {
   flex-direction: column;
   gap: 0.5rem;
 }
+.billing__item {
+  display: flex;
+  flex-direction: column;
+}
 
 /* MODULES */
 img {
