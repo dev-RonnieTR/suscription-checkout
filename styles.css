@@ -99,6 +99,11 @@ html {
 }
 
 /*STARTER PLAN SECTION*/
+.starter-plan-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .starter-plan {
   display: flex;
   flex-direction: column;
