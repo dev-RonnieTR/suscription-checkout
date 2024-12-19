@@ -19,7 +19,35 @@
 <body>
     <main>
         <section class="personal-info-section">
-           <img class="logo" src="resources/neuralite-logo.svg" alt="Neuralite" width="98px" height="20px"> 
+            <img class="logo" src="resources/neuralite-logo.svg" alt="Neuralite" width="98px" height="20px">
+            <div class="upgrade">
+                <h1 class="upgrade__heading">Upgrade to Plus</h1>
+                <p class="upgrade__description">Upgrade today and take your AI-powered productivity to the next level.
+                </p>
+            </div>
+            <form class="billing" action="" method="post">
+                <div class="billing__item">
+                    <label class="billing__label" for="name">Billed to</label>
+                    <input class="billing__data" type="text" name="name" id="name">
+                </div>
+                <div class="billing__item">
+                    <label class="billing__label" for="email">Email Address</label>
+                    <input class="billing__data" type="email" name="email" id="email">
+                </div>
+                <div class="billing__item">
+                    <label class="billing__label" for="country">Country</label>
+                    <select class="billing__data" name="country" id="country">
+                        <option value="Finland">Finland</option>
+                        <option value="Other">Rest of the world</option>
+                    </select>
+                </div>
+                <div class="billing__item">
+                    <label class="billing__label" for="zip">Postal Code</label>
+                    <input class="billing__data" type="number" name="zip" id="zip">
+                </div>
+                <button class="cancel-button" type="button">Cancel</button>
+                <button class="suscribe-button" type="submit">Suscribe</button>
+            </form>
         </section>
     </main>
 </body>
