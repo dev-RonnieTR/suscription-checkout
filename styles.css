@@ -18,6 +18,9 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
 
+  --font-color-1: #000000;
+  --font-color-2: #4d5562;
+
   --color-background-1: #ffffff;
   --color-background-2: #f0f3f6;
   --color-highlight-1: #ece9fc;
@@ -31,11 +34,28 @@ html {
 
 /* PERSONAL INFO SECTION LAYOUT */
 .logo {
-    width: max(6.125rem, 98px);
-    height: auto;
+  width: max(6.125rem, 98px);
+  height: auto;
 }
 
 /* MODULES */
 img {
-    display: block;
+  display: block;
+}
+
+/* TYPOGRAPHY */
+.upgrade__heading {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-1);
+}
+.upgrade__description {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--font-color-2)
+}
+.billing__label {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-2);
 }
