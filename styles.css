@@ -28,3 +28,14 @@ html {
   font-family: "Be Vietnam Pro", serif;
   font-size: 16px;
 }
+
+/* PERSONAL INFO SECTION LAYOUT */
+.logo {
+    width: max(6.125rem, 98px);
+    height: auto;
+}
+
+/* MODULES */
+img {
+    display: block;
+}
