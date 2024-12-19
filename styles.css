@@ -26,6 +26,8 @@
   --color-highlight-1: #ece9fc;
   --color-highlight-2: #5425af;
   --color-border: #d2d5da;
+
+  --suscribe-button-width: 80%;
 }
 
 html {
@@ -86,7 +88,23 @@ html {
 .payment-method--active {
   background-color: var(--color-highlight-1);
   border: 2px solid var(--color-highlight-2);
-  border-radius: 0.8rem;
+}
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.action-button {
+  padding: 1em;
+  border: none;
+  border-radius: 0.7em;
+}
+.cancel-button {
+  width: calc(100% - var(--suscribe-button-width));
+  background-color: var(--color-background-2);
+}
+.suscribe-button {
+  background-color: var(--color-highlight-2);
+  width: var(--suscribe-button-width);
 }
 
 /* MODULES */
@@ -124,4 +142,14 @@ img {
 }
 #country {
   font-weight: var(--font-weight-medium);
+}
+.action-button {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+}
+.cancel-button {
+  color: var(--font-color-1);
+}
+.suscribe-button {
+  color: white;
 }

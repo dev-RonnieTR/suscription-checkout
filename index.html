@@ -28,7 +28,8 @@
             <form class="billing" action="" method="post">
                 <div class="billing__item">
                     <label class="billing__label" for="name">Billed to</label>
-                    <input class="billing__data" type="text" name="name" id="name" placeholder="Enter first & last name">
+                    <input class="billing__data" type="text" name="name" id="name"
+                        placeholder="Enter first & last name">
                 </div>
                 <div class="billing__item">
                     <p class="billing__label">Payment Details</p>
@@ -64,8 +65,11 @@
                     <label class="billing__label" for="zip">Postal Code</label>
                     <input class="billing__data" type="number" name="zip" id="zip" placeholder="00270">
                 </div>
-                <button class="cancel-button" type="button">Cancel</button>
-                <button class="suscribe-button" type="submit">Suscribe</button>
+                <div class="action-buttons">
+                    <button class="action-button cancel-button" type="button">Cancel</button>
+                    <button class="action-button suscribe-button" type="submit">Suscribe</button>
+                </div>
+
             </form>
         </section>
     </main>
