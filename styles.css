@@ -52,6 +52,14 @@ html {
   display: flex;
   flex-direction: column;
 }
+.billing__data:not(.payment-methods) {
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+.billing__data:not(.payment-methods),
+.billing__data::placeholder {
+  padding: 1em 0.5em;
+}
 .payment-methods {
   display: flex;
   justify-content: space-between;
@@ -107,4 +115,13 @@ img {
   font-weight: var(--font-weight-semibold);
   color: var(--font-color-1);
   text-align: left;
+}
+.billing__data,
+.billing__data::placeholder {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--font-color-1);
+}
+#country {
+  font-weight: var(--font-weight-medium);
 }
