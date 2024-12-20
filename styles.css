@@ -99,7 +99,7 @@ main {
   height: auto;
 }
 .payment-method__text {
-  width: 10em;
+  width: clamp(10em, 15vw, 300px); /*Width to ensure all the payment method buttons have the same size*/
 }
 .action-buttons {
   display: flex;
