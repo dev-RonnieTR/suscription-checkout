@@ -330,3 +330,18 @@ img {
     flex-direction: column;
   }
 }
+
+@media (max-width: 330px) {
+  .plan {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .plan__text__title, .plan__text__description {
+    text-align: center;
+  }
+  .total {
+    flex-direction: column;
+  }
+}
