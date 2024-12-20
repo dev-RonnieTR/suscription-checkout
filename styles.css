@@ -44,6 +44,7 @@ main {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "info plan";
+  gap: 3rem;
 }
 
 /* PERSONAL INFO SECTION LAYOUT */
