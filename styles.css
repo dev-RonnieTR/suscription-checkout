@@ -102,17 +102,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
 }
 .payment-method__img {
   width: max(1.25rem, 20px);
   height: auto;
 }
 .payment-method__text {
-  width: clamp(
-    10em,
-    15vw,
-    300px
-  ); /*Width to ensure all the payment method buttons have the same size*/
+  max-width: 10em;
 }
 .action-buttons {
   display: flex;
