@@ -113,6 +113,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+
+  background-color: var(--color-background-2);
+  border-radius: 1rem;  
 }
 .starter-plan {
   display: flex;
