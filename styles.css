@@ -68,7 +68,7 @@ main {
 .billing {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem
+  gap: 1.5rem;
 }
 .billing__item {
   display: flex;
@@ -108,7 +108,11 @@ main {
   height: auto;
 }
 .payment-method__text {
-  width: clamp(10em, 15vw, 300px); /*Width to ensure all the payment method buttons have the same size*/
+  width: clamp(
+    10em,
+    15vw,
+    300px
+  ); /*Width to ensure all the payment method buttons have the same size*/
 }
 .action-buttons {
   display: flex;
@@ -139,6 +143,12 @@ main {
 
   background-color: var(--color-background-2);
   border-radius: 1rem;
+  background-image: image-set(
+    url("resources/Checkout-background.png") 1x,
+    url("resources/Checkout-background@2x.png") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .starter-plan {
   display: flex;
@@ -254,7 +264,8 @@ img {
   font-weight: var(--font-weight-medium);
   color: var(--font-color-1);
 }
-.total__title, .total__price {
+.total__title,
+.total__price {
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-semibold);
   color: var(--font-color-1);
