@@ -35,8 +35,17 @@ html {
   font-size: 16px;
 }
 
+/* MAIN GRID */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "info plan";
+}
+
 /* PERSONAL INFO SECTION LAYOUT */
 .personal-info-section {
+  grid-area: info;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -100,6 +109,7 @@ html {
 
 /*STARTER PLAN SECTION*/
 .starter-plan-section {
+  grid-area: plan;
   display: flex;
   flex-direction: column;
   gap: 3rem;
