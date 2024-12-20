@@ -28,6 +28,8 @@
   --color-border: #d2d5da;
 
   --suscribe-button-width: 80%;
+
+  --padding-grid-section: 2rem;
 }
 
 html {
@@ -37,6 +39,7 @@ html {
 
 /* MAIN GRID */
 main {
+  margin: 2vh 2%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
@@ -45,6 +48,8 @@ main {
 
 /* PERSONAL INFO SECTION LAYOUT */
 .personal-info-section {
+  padding: var(--padding-grid-section);
+
   grid-area: info;
   display: flex;
   flex-direction: column;
@@ -109,13 +114,15 @@ main {
 
 /*STARTER PLAN SECTION*/
 .starter-plan-section {
+  padding: var(--padding-grid-section);
+
   grid-area: plan;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 
   background-color: var(--color-background-2);
-  border-radius: 1rem;  
+  border-radius: 1rem;
 }
 .starter-plan {
   display: flex;
@@ -212,7 +219,7 @@ img {
 }
 .starter-plan__title,
 .plan__text__title {
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-semibold);
   color: var(--font-color-1);
   text-align: left;
